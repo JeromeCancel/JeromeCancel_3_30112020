@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
             <div class="accueil-container">
                 <h1 class="accueil-title">Réservez le menu qui<br> vous convient</h1>
                 <p class="accueil-text">Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
-                <button class="accueil-btn">Explorez nos restaurants</button>
+                <a class=" btn-model accueil-btn" href="#restaurant-view">Explorez nos restaurants</a>
             </div>
         </div>
     </header>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </section>
-        <section class="restaurant-section">
+        <section  id="restaurant-view" class="restaurant-section">
             <div class="restaurant-container">
                 <h1 class="restaurant-title">Restaurants</h1>
                 <a class="restaurant-link" href="#">
@@ -55,10 +55,10 @@
                         <figure class="restaurant-container-img">
                            <img class="restaurant-img" src="/Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">     
                         </figure>
-                        <h3 class="restaurant-name"></h3>
-                        <h4 class="restaurant-location"></h4>
+                        <h3 class="restaurant-name">La palette du goût</h3>
+                        <h4 class="restaurant-location">Ménilmontant</h4>
                         <p class="new">Nouveau</p>
-                        <button><i class="far fa-heart"></i></button>
+                        <button class="btn-coeur"><i class="far fa-heart"></i></button>
                     </article>
                 </a>
                 <a class="restaurant-link" href="#">
@@ -66,10 +66,10 @@
                         <figure class="restaurant-container-img">
                             <img class="restaurant-img" src="/Images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                         </figure>
-                        <h3 class="restaurant-name"></h3>
-                        <h4 class="restaurant-location"></h4>
+                        <h3 class="restaurant-name">La note enchantée</h3>
+                        <h4 class="restaurant-location">Charonne</h4>
                         <p class="new">Nouveau</p>
-                        <button><i class="far fa-heart"></i></button>
+                        <button class="btn-coeur"><i class="far fa-heart"></i></button>
                     </article>
                 </a>
                 <a class="restaurant-link" href="#">
@@ -77,9 +77,9 @@
                         <figure class="restaurant-container-img">
                             <img class="restaurant-img" src="/Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
                         </figure>
-                        <h3 class="restaurant-name"></h3>
-                        <h4 class="restaurant-location"></h4>
-                        <button><i class="far fa-heart"></i></button>
+                        <h3 class="restaurant-name">à la française</h3>
+                        <h4 class="restaurant-location">Cité Rouge</h4>
+                        <button class="btn-coeur"><i class="far fa-heart"></i></button>
                     </article>
                 </a>
                 <a class="restaurant-link" href="#">
@@ -87,9 +87,9 @@
                         <figure class="restaurant-container-img">
                             <img class="restaurant-img" src="/Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                         </figure>
-                        <h3 class="restaurant-name"></h3>
-                        <h4 class="restaurant-location"></h4>
-                        <button><i class="far fa-heart"></i></button>
+                        <h3 class="restaurant-name">Le délice des sens</h3>
+                        <h4 class="restaurant-location">Folie-Méricourt</h4>
+                        <button class="btn-coeur"><i class="far fa-heart"></i></button>
                     </article>
                 </a>
             </div>
@@ -99,16 +99,16 @@
         <div class="footer-container">
             <h5 class="footer-logo">ohmyfood</h5>
             <a class="footer-link" href="#"> 
-                <span class="footer-link link-icon"><i class="fas fa-utensils"></i>Proposez un restaurant</span>
+                <span><i class="fas fa-utensils"></i>Proposez un restaurant</span>
             </a>
             <a class="footer-link" href="#"> 
-                <span class="footer-link link-icon"><i class="fas fa-hands-helping"></i>devenir partenaire</span>
+                <span><i class="fas fa-hands-helping"></i>Devenir partenaire</span>
             </a>
             <a class="footer-link" href="#"> 
-                <p>Mentions légales</p>
+                <p class="footer-mentions">Mentions légales</p>
             </a>
             <a class="footer-link" href="#"> 
-                <p>Contact</p>
+                <p class="footer-contact">Contact</p>
             </a>
         </div>
     </footer>

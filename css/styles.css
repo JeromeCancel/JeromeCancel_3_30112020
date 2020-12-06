@@ -1,5 +1,1 @@
-body {
-  box-sizing: border-box;
-}
-
-/*# sourceMappingURL=styles.css.map */
+@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap";@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";body{box-sizing:border-box;margin:0;font-family:"roboto","shrikhand",sans-serif}.header-container{max-width:375px}.wrapper-content{max-width:375px}h1{font-family:"shrikhand",sans-serif}/*# sourceMappingURL=styles.css.map */
