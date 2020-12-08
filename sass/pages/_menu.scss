@@ -1,0 +1,98 @@
+.header-container, .section-content, .footer-container{
+    max-width: 375px;
+}
+
+.logo-container{
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logo-menu{
+        margin-left: 60px;
+    }
+}
+
+.img-container{
+    width: 100%;
+    margin: 0;
+    .img-menu{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/*------------------Section-content----------------------------*/
+
+.section-content{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: $color-bgcontent;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 0 30px 0;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    .menu-favorite{
+        padding-left: 20px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        h1{
+            font-family:'Shrikhand', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            margin: -20px 0 0 0;
+        }
+    }
+    .menu-btn{
+        margin: 50px auto 30px auto;
+    }
+}
+
+.section-entrees, .section-plats, .section-desserts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    h2{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 30px 0 5px 0;
+    }
+    hr{
+        width: 45px;
+        margin: 0 0 15px 0;
+        border: 2px solid $color-tertiary;
+    }
+}
+
+.wrapper-vignette{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 12px 20px 0;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.10);
+    h3{
+        font-weight: 400;
+        margin: 10px 0 7px 10px;
+    }
+    .vignette-infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 10px 10px;
+        .vignette-subtitle{
+            margin: 0;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .vignette-price{
+            margin: 0 20px 0 0;
+            font-weight: 500;
+        }
+    }
+}
+

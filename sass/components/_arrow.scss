@@ -1,0 +1,28 @@
+.icon-arrow{
+    position: relative;
+    margin-left: 15px;
+}
+
+.start-arrow{
+	position: absolute;
+	border: solid black;
+    border-width: 2px;
+    width: 10px;
+    margin-top: -12px;
+    margin-left: 3px;
+    transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
