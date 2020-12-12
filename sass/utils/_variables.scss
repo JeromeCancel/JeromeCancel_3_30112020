@@ -3,6 +3,17 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-bglocation: #eaeaea;
+$color-bglocalisation: #eaeaea;
 $color-bgcontent: #f6f6f6;
 $color-bgfooter: hsl(0, 1%, 19%);
+
+/*--------Variables-breakpoints*/
+
+$screen-xsm-min: 350px;
+$screen-sm-min: 695px;
+$screen-md-min: 980px;
+$screen-lg-min: 1440px;
+
+
+
+/*$screeb-xl-min: 1440px;*/

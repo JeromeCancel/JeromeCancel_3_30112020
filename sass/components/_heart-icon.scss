@@ -4,12 +4,11 @@
     cursor: pointer;
 }
 
-svg path#favoris-fill{
+svg path.favoris-fill{
     opacity: 0;
     transition: opacity .5s ease-in;
 }
 
-svg:hover path#favoris-fill{
+svg:hover path.favoris-fill{
     opacity: 1;
 }
-
