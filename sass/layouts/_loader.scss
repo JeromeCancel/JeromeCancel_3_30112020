@@ -1,0 +1,80 @@
+.hide-section{
+    margin: 0;
+    padding: 0;
+    background-color: $color-bgfooter;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shrikhand", sans-serif;
+    animation: hide 0s ease-in 3s forwards;
+}
+
+.loading{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top: 10px solid $color-tertiary;
+    position: absolute;
+    animation: circle 3s linear infinite;
+}
+
+.loading::before, .loading::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top: -10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.loading::before{
+    border-top: 10px solid $color-secondary;
+    transform: rotate(120deg);
+}
+
+.loading::after{
+    border-top: 10px solid $color-primary;
+    transform: rotate(240deg);
+}
+
+.loader{
+    position: absolute;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    animation: text 3s linear infinite;
+}
+
+@keyframes circle{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes hide{
+    to{
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+  
+  @keyframes hide{
+    to{
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  }

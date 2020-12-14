@@ -308,11 +308,11 @@
                 margin-right: auto;
             }
             @include md{
-                flex: auto initial none;
+                flex: auto none none;
                 margin: 0 auto 15px auto;
             }
             @include xsm{
-                flex: auto initial none;
+                flex: auto none none;
                 margin: 0 auto 15px auto;
             }
         }
@@ -323,11 +323,11 @@
                 margin-right: 20px;
             }
             @include md{
-                flex: auto initial none;
+                flex: auto none none;
                 margin: 0 auto 15px auto;
             }
             @include xsm{
-                flex: auto initial none;
+                flex: auto none none;
                 margin: 0 auto 15px auto;
             }
         }
