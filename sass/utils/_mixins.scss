@@ -1,3 +1,5 @@
+/* ---------------Mixins-Media-queries---------------*/
+
 @mixin xsm {
     @media (max-width: $screen-xsm-min) {@content;}
 }
@@ -23,3 +25,8 @@
 }
 
 
+/*------------------Mixins-colors---------------------*/
+
+@mixin btn-lighter {
+    
+}
