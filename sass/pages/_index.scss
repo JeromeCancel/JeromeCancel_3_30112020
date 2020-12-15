@@ -227,7 +227,7 @@
                 margin: 8px auto 10px -500px;
             }
             @include sm{
-                margin: 8px auto 10px -335px;
+                margin: 8px auto 10px -320px;
             }
             @include xsm{
                 font-size: 10px;
@@ -308,11 +308,11 @@
                 margin-right: auto;
             }
             @include md{
-                flex: auto none none;
+                flex: 0 0 0;
                 margin: 0 auto 15px auto;
             }
             @include xsm{
-                flex: auto none none;
+                flex: 0 0 0;
                 margin: 0 auto 15px auto;
             }
         }
@@ -323,11 +323,11 @@
                 margin-right: 20px;
             }
             @include md{
-                flex: auto none none;
+                flex: 0 0 0;
                 margin: 0 auto 15px auto;
             }
             @include xsm{
-                flex: auto none none;
+                flex: 0 0 0;
                 margin: 0 auto 15px auto;
             }
         }
