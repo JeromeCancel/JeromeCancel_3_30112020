@@ -223,10 +223,10 @@
 @keyframes icon-anim{
     0%{
         overflow: hidden;
-        rotate: 180deg;
+        transform: rotate(180deg);
     }
     100%{
         overflow: visible;
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
 }
