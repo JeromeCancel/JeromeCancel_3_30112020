@@ -106,14 +106,36 @@
         }
     }
 }
+.section-entrees{
+    opacity: 0;
+    animation: anim-menu .7s ease forwards;
+}
+
+.section-plats{
+    opacity: 0;
+    animation: anim-menu .7s ease 900ms forwards;
+}
+
+.section-desserts{
+    opacity: 0;
+    animation: anim-menu .7s ease 1800ms forwards;
+}
 
 .wrapper-vignette{
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: white;
     margin: 0 12px 20px 0;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    &:hover .vignette-anim{
+        animation: price-anim 600ms ease forwards;
+        .fa-check-circle{
+            animation: icon-anim 600ms ease forwards;
+        }
+    }
     h3{
         font-weight: 400;
         font-size: 18px;
@@ -131,7 +153,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 0 10px 10px;
+        margin-left: 10px;
         .vignette-subtitle{
             margin: 0;
             font-size: 15px;
@@ -146,10 +168,65 @@
             }
         }
         .vignette-price{
-            margin: 0 20px 0 0;
-            padding-left: 15px;
+            padding-left: 50px;
             font-weight: 500;
+            margin: 0 15px 0 50px;
+        }
+    }
+    .vignette-anim{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        margin-top: -39px;
+        padding: 25px 0 25px 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color-tertiary;
+        .fa-check-circle{
+            color: white;
+            overflow: hidden;
         }
     }
 }
 
+/*------------------Keyframes----------------------------*/
+
+@keyframes anim-menu{
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    50%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes price-anim{
+    0%{
+        width: 0;
+        padding: 25px 0 25px 0;
+    }
+    100%{
+        width: 10%;
+        padding: 25px 15px 25px 15px;
+    }
+}
+
+@keyframes icon-anim{
+    0%{
+        overflow: hidden;
+        rotate: 180deg;
+    }
+    100%{
+        overflow: visible;
+        rotate: 0deg;
+    }
+}
